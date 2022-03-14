@@ -1,0 +1,184 @@
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.- Repository -> New -> Repository name: JSON -> Public -> Add a README file -> Create repository
+ 5. Клонировать репозиторий JSON на локальный компьютер.- git clone https://github.com/whispavi/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”. - cd JSON -> touch new.json
+ 7. Добавить файл под гит. - git add new.json
+ 8. Закоммитить файл. - git commit -m "new commit"
+ 9. Отправить файл на внешний GitHub репозиторий. - git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. - vim new.json ->
+{
+        "name":"Tori",
+        "lastName":"Vorobei",
+        "age":38,
+        "pet":1,
+        "salary": [
+        {
+                "type":"ruble",
+                "number": 200000
+        },
+        {
+                "type":"dollar",
+                "number": 1000
+        }
+        ]
+}
+-> esc +:wq
+ 11. Отправить изменения на внешний репозиторий. - git push
+ 12. Создать файл preferences.json - touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+-vim preference.json
+{
+        "favoriteFilm":"Too Big to Fail",
+        "favoriteSerial":"The bones",
+        "favoriteSeason":"winter",
+        "country":"Japan"
+}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON - touch sklls.json
+ 15. Отправить сразу 2 файла на внешний репозиторий. - git add . && git commit -m "part 15" && git push
+ 16. На веб интерфейсе создать файл bug_report.json. - Repositories -> JSON -> Add file -> Create new file
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON - git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.- Repository -> New -> Repository name: XML -> Public -> Add a README file -> Create repository
+ 22. Клонировать репозиторий XML на локальный компьютер. - git clone https://github.com/whispavi/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.- cd XML -> touch new.xml
+ 24. Добавить файл под гит.- git add new.xml
+ 25. Закоммитить файл.- git commit -m "new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий. - git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.- vim new.xml -> <xml>
+              <name>Tori</name>
+              <age>38</age>
+              <pet>1</pet>
+              <salary>1000</salary>
+
+ 28. Отправить изменения на внешний репозиторий.- git push -> git add . -> git commit -m "second" 
+ 29. Создать файл preferences.xml - touch preferencs.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. - vim preferencs.xml ->
+<xml>
+        <film>Too Big to Fail</film>
+        <favoriteFilm>Too Big to Fail</film>
+        <serial>The bones</serial>
+        <season>winter</season>
+        <country>Japan</country>
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML - touch sklls.xml -> vim sklls.xml ->
+<xml>
+        <course>Тестирование ПО</course>
+        <skill>Теория тестирования</skill>
+        <skill>Мобильное тестирование</skill>
+        <skill>Автоматизация тестирования</skill>
+        <skill>Нагрузочное тестирование</skill>
+        <skill>Работа с базами данных</skill>
+        <skill>Основы языка Python</skill>
+
+ 32. Сделать коммит в одну строку.
+ 33. Отправить сразу 2 файла на внешний репозиторий. - git push && git add . 
+ 34. На веб интерфейсе создать файл bug_report.xml. - Repositories -> XML -> Add file -> Create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+1 <title>При установки приложения на этапе выбора directory отсутствует кнопка Install</title>
+2 <step1>Запустить setup.exe</step1>
+3 <step2>Выбрать папку установки</step2>
+4 <act>Отсутствует кнопка Install при выборе директории</act>
+5 <ext>При нажатии на кнопку Install приложение устанавливается</ext> 
+6 <envoironment>Windows 10 Home x64</envoironment>
+7 <severity>Major</severity>
+8 <priority>Medium</priority>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML - git pull
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT. - Repository -> New -> Repository name: TXT -> Public -> Add a README file -> Create repository
+ 2. Клонировать репозиторий TXT на локальный компьютер. - git clone https://github.com/whispavi/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. - touch new.txt
+ 4. Добавить файл под гит. - git add new.txt
+ 5. Закоммитить файл. - git commit -m "first"
+ 6. Отправить файл на внешний GitHub репозиторий. - git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT. - vim new.txt ->
+Имя: Виктория
+Возраст: 38
+Кол-во домашних животных: 1
+Желаемая зарплата: 1000$
+
+ 8. Отправить изменения на внешний репозиторий. - git push
+ 9. Создать файл preferences.txt - touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+- vim preferences.txt -> 
+Любимый фильм:"Too Big to Fail",
+Любимый сериал: "Кости",
+Любимая еда: сыр,
+Любимое время года: зима,
+Страна для тура: Япония.
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT - touch sklls.txt -> vim sklls.txt ->
+На курсе "Тестирование ПО" будут изучены:
+Теория тестирования,
+Мобильное тестирование,
+Автоматизация тестирования,
+Нагрузочное тестирование,
+Работа с базами данных,
+Основы языка Python.
+
+ 12. Сделать коммит в одну строку.git commit -m "ferst"
+ 13. Отправить сразу 2 файла на внешний репозиторий. - git add sklls.txt preferences.txt && git commit -m "second" && git push
+ 14. На веб интерфейсе создать файл bug_report.txt. - Repositories -> TXT -> Add file -> Create new file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - Commit new changes
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+- bug_report.txt -> Edit this file ->
+1 ID	1.1
+2 Tester	Vorobei V.
+3 Title:	При нажатии на кнопку "Войти через Google" открывается страница с формой регистрации через Email 
+4 Steps:	1. Нажать на кнопку Авторизация 
+5               2. В появившемся окне ""Войти через соцсети"" нажать на логотип Google
+6 AR:	При выборе регистрации "Войти через соцсети" нажать на лейбл "Google" открывается страница с формой регистрации через Email 
+7 ER:	При выборе регистрации "Войти через соцсети" нажать на лейбл "Google" открывается страница "Войти в аккаунт Google" 
+8 Envoironment:	Windows 10, 20H2 Microsoft Edge, Версия 98.0.1108.50
+9 Severity:	Major
+10 Priority:	Medium
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT - git pull
+
+
+HomeWork2 (Branch)
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+2. Запушить все ветки на внешний репозиторий
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+4. Запушить структуру багрепорта на внешний репозиторий
+5. Вмержить ветку Bag Reports в Main
+6. Запушить main на внешний репозиторий.
+7. В ветке CheckLists набросать структуру чек листа.
+8. Запушить структуру на внешний репозиторий
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+10. Синхронизировать Внешнюю и Локальную ветки Main
